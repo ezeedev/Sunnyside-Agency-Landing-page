@@ -1,0 +1,110 @@
+/* Barlow: 600 */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+/* Fraunces: 700, 900*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+:root {
+    /* Primary */
+
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    /* (graphic design text) */
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+
+    /* (photography text) */
+    --Dark-blue: hsl(198, 62%, 26%);
+
+    /* (footer) */
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+
+    /* Neutral */
+
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(255, 100%, 0%);
+
+    /* Fonts */
+
+    --Font-Barlow: 'Barlow', sans-serif;
+    --Font-Fraunces: 'Fraunces', serif;
+}
+
+* {
+    margin: 0;
+    color: var();
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    background-color: #333;
+    color: var(--White);
+    font-family: var(--Font-Fraunces);
+}
+
+/* Hero and Nav section */
+
+.hero {
+    height: 100vh;
+    background-image: url(images/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 73px;
+    padding: 0 1.5rem;
+}
+
+.nav__link {
+    display: none;
+}
+
+.nav__link li {
+    list-style: none;
+}
+
+.nav__links {
+    text-decoration: none;
+    color: var(--White);
+    font-family: var(--Font-Barlow);
+    font-size: .8rem;
+}
+.nav__links--contact {
+    background-color: var(--White);
+    color: var(--Black);
+    padding: .5rem 1rem;
+    border-radius: 50px;
+}
+
+.nav__menu--mobile {
+    cursor: pointer;
+}
+.nav__hamburger{
+    width: 20px;
+}
+
+.hero__title--container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    height: 60%;
+}
+
+.hero__title {
+    text-align: center;
+    font-family: var(--Font-Fraunces);
+    font-size: 4em;
+}
