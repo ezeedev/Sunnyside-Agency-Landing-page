@@ -144,6 +144,40 @@ body {
     background-color: #666;
 }
 
+.info__title {
+    padding: 0 2em;
+}
+
+.info__paragraph {
+    font-size: 1.3em;
+    font-family: var(--Font-Barlow);
+}
+
+.info__learn {
+    position: relative;
+    color: var(--Black);
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1;
+    font-weight: 900;
+}
+
+.info__learn::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 8px;
+    bottom: -3px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--Yellow);
+    z-index: -1;
+    border-radius: 8px;
+    opacity: .4;
+}
+
+
 /* @media (min-width: 700px) {
 
     .hero {
